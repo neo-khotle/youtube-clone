@@ -7,4 +7,18 @@
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 93px;
+    margin-right: 10px;
+}
+.navbar .searchbar{
+    display: flex;
 }
