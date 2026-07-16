@@ -22,3 +22,56 @@
 .navbar .searchbar{
     display: flex;
 }
+
+.search{
+    display: flex;
+    border: 1px solid rgb(0,0,0);
+    width: 600px;
+    margin-right: 20px;
+}
+.search input{
+    border: none;
+    width: 90%;
+    padding-left: 10px;
+}
+.search button{
+    border: none;
+    width: 10%;
+}
+.search button i{
+    margin: 0;
+    padding: 2px;
+}
+.material-icons{
+    color: rgb(105,105,105);
+    margin-right: 10px;
+}
+
+.mainbody{
+    height: calc(100vh - 56px);
+    display: flex;
+}
+
+.categories{
+    width: 204px;
+    height: 100%;
+    background-color: white;
+}
+
+.category{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.videos{
+    width: calc(100vw - 204px);
+    height: 100%; 
+    background-color: white;
+    border-top: 1px solid rgb(105,105,105);
+}
