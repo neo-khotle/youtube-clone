@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
 /* Mobile view*/
 .navbar{
     display: flex;
@@ -14,7 +21,9 @@
 .navbar .logo{
     display: flex;
     align-items: center;
+    margin-right: 8px;
 }
+
 .logo img{
     width: 93px;
     margin-right: 10px;
@@ -65,13 +74,52 @@
     height: 40px;
     padding: 0 12px;
     font-size: 14px;
+    font-weight: 400;
     cursor: pointer;
+    color: rgb(15, 15, 15);
 }
 
+.category:hover{
+    background-color: rgb(242, 242, 242);
+}
+
+.category i{
+    margin-right: 24px;
+}
+
+.categories-section{
+    border-bottom: 1px solid #cccccc;
+    margin-top: 10px;
+}
+
+.categories-section .category:last-child{
+    margin-bottom: 10px;
+}
+.categories-footer{
+    padding: 25px;
+}
+
+.footer-section{
+    margin-bottom: 12px;
+}
+
+.footer-section span{
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 5px;
+    color: #606060;
+    cursor: pointer;
+}
+.copyright{
+    color: #606060;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
 
 .videos{
     width: calc(100vw - 204px);
     height: 100%; 
     background-color: white;
-    border-top: 1px solid rgb(105,105,105);
+    border-top: 1px solid #cccccc;
 }
