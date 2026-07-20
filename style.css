@@ -17,7 +17,11 @@ body{
     align-items: center;
     height: 56px;
     padding: 0 16px;
-}
+    position: sticky;
+    top: 0;
+    background: white;
+    
+}    
 .navbar .logo{
     display: flex;
     align-items: center;
@@ -59,12 +63,14 @@ body{
 .mainbody{
     height: calc(100vh - 56px);
     display: flex;
+    overflow: hidden;    /*scroll-ability stopped*/ /*overflow: hidden;*/
 }
 
 .categories{
     width: 204px;
     height: 100%;
     background-color: white;
+    overflow-y: scroll; /*y-axis scroll feature*/
 }
 
 .category{
@@ -118,8 +124,56 @@ body{
 }
 
 .videos{
-    width: calc(100vw - 204px);
+    width: calc(100vw - 240px);
     height: 100%; 
     background-color: white;
     border-top: 1px solid #cccccc;
+}
+
+.video-grid{
+    display: flex; 
+    padding: 15px;
+}
+
+.video{
+    width: 30vw;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.video .thumbnail img{
+    width: 100%; 
+}
+
+.video .details{
+    display: flex;
+    margin-top: 5px;
+    width: 90px;
+}
+
+.video .video-details{
+    display: flex;
+    margin-top: 5px;
+    width: 90%;
+}
+
+.video .profile{
+    margin-right: 12px;
+}
+
+.video .profile img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.video .video-title p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.video .posted-by{
+    font-size: 14px;
+    font-weight: 500;
+    color: #606060;
 }
