@@ -40,28 +40,58 @@ body{
 
 .search{
     display: flex;
-    border: 1px solid rgb(0,0,0);
+    border: 1px solid rgb(211,211,211);
     width: 600px;
     height: 100%;
     margin-right: 20px;
+    border-radius: 20px;
 }
 .search input{
     border: none;
     width: 90%;
     padding-left: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
 }
 .search button{
     border: none;
+    border-left: 1px solid rgb(211,211,211);
     width: 10%;
     align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .search button i{
     margin: 0;
     padding: 2px;
 }
+.mic{
+    background: #e9e9e9;
+    padding: 8px;
+    border-radius: 50%;
+} 
+
 .material-icons{
-    color: rgb(105,105,105);
+    color: rgb(0, 0, 0);
     margin-right: 10px;
+}
+.navigation-icons {
+    display: flex;
+    align-items: center;
+}
+.navigation-icons button {
+    display: flex;
+    align-items: center;
+    
+    padding: 8px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    background: #e9e9e9;
 }
 
 .mainbody{
@@ -165,9 +195,34 @@ body{
     cursor: pointer;
     margin-bottom: 35px; 
 }
+
 .video .thumbnail img{
     width: 100%; 
     border-radius: 10px;
+}
+
+.video .thumbnail{
+    position: relative;
+}
+
+/*video-duration bad*/
+.video .duration-badge{
+    position: absolute; 
+    bottom: 8px; /* Offset from the bottom edge */
+    right: 8px;  /* Offset from the right edge */
+    /* Exact styling matching YouTube UI */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark translucent background */
+    color: #ffffff; /* Bright white text */
+    font-size: 12px;
+    font-weight: 500; 
+    padding: 3px 4px; /* Tight padding padding around numbers */
+    border-radius: 4px; /* Slight rounded look */
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
+
+.duration-badge img{
+    color: #ffffff;
 }
 
 .video .details{
