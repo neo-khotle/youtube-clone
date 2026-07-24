@@ -205,7 +205,7 @@ body{
     position: relative;
 }
 
-/*video-duration bad*/
+/*video-duration badge*/
 .video .duration-badge{
     position: absolute; 
     bottom: 8px; /* Offset from the bottom edge */
@@ -223,6 +223,33 @@ body{
 
 .duration-badge img{
     color: #ffffff;
+}
+
+.thumbnail{
+    transition:opacity .3s;
+}
+
+.preview-video{
+    transition:opacity .3s;
+}
+
+.video .preview-video{
+    position: absolute;
+    object-fit: cover;
+    border-radius: 12px;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+}
+
+.thumbnail:hover .preview-video{
+    opacity:1;
+}
+
+.thumbnail:hover .thumbnail{
+    opacity:0;
 }
 
 .video .details{
