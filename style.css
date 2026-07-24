@@ -10,7 +10,7 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-/* Mobile view*/
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -21,17 +21,23 @@ body{
     top: 0;
     background: white;
     
-}    
+} 
+
 .navbar .logo{
     display: flex;
     align-items: center;
     margin-right: 8px;
 }
 
+.navbar i{
+    margin-right: 24px;;
+}
+
 .logo img{
     width: 93px;
     margin-right: 10px;
 }
+
 .navbar .searchbar{
     display: flex;
     align-items: center;
@@ -46,6 +52,7 @@ body{
     margin-right: 20px;
     border-radius: 20px;
 }
+
 .search input{
     border: none;
     width: 90%;
@@ -54,6 +61,7 @@ body{
     font-size: 16px;
     font-weight: 400;
 }
+
 .search button{
     border: none;
     border-left: 1px solid rgb(211,211,211);
@@ -62,10 +70,12 @@ body{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 .search button i{
     margin: 0;
     padding: 2px;
 }
+
 .mic{
     background: #e9e9e9;
     padding: 8px;
@@ -76,10 +86,12 @@ body{
     color: rgb(0, 0, 0);
     margin-right: 10px;
 }
+
 .navigation-icons {
     display: flex;
     align-items: center;
 }
+
 .navigation-icons button {
     display: flex;
     align-items: center;
@@ -92,6 +104,10 @@ body{
     font-size: 14px;
     font-weight: 500;
     background: #e9e9e9;
+}
+
+.navigation-icons button i{
+    margin: 1px;
 }
 
 .mainbody{
@@ -121,7 +137,6 @@ body{
     background: #888;
 }
 
-
 .category{
     display: flex;
     border-radius: 10px;
@@ -148,9 +163,14 @@ body{
     margin-top: 10px;
 }
 
+.categories-section.custom img{
+    margin-right: 24px;
+}
+
 .categories-section .category:last-child{
     margin-bottom: 10px;
 }
+
 .categories-footer{
     padding: 25px;
 }
@@ -166,6 +186,7 @@ body{
     color: #606060;
     cursor: pointer;
 }
+
 .copyright{
     color: #606060;
     font-size: 12px;
@@ -235,7 +256,7 @@ body{
 
 .video .preview-video{
     position: absolute;
-    object-fit: cover;
+    object-fit: coverwhy ;
     border-radius: 12px;
     top:0;
     left:0;
@@ -284,3 +305,5 @@ body{
     font-weight: 500;
     color: #606060;
 }
+
+
