@@ -10,7 +10,10 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-
+/* ==========================================
+   PC / DESKTOP (1024px and up)
+   ========================================== */
+@media (min-width: 1024px){
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -196,10 +199,16 @@ body{
 
 .videos{
     width: calc(100% - 240px);
-    height: 100%; 
+    height: 100%;  
+
+    /* testing overflow rules
+    flex:1;
+    height:100%;
+    overflow-y:auto; */
+    
     background-color: white;
     border-top: 1px solid #cccccc;
-    overflow-y: scroll;
+    overflow-y: scroll; 
 }
 
 .video-grid{
@@ -212,7 +221,7 @@ body{
 .video{
     border-radius: 10px;
     width: calc(33% - 2px);
-    margin-right: 5px;
+    margin-right: 6px;
     cursor: pointer;
     margin-bottom: 35px; 
 }
@@ -256,7 +265,7 @@ body{
 
 .video .preview-video{
     position: absolute;
-    object-fit: coverwhy ;
+    object-fit: cover ;
     border-radius: 12px;
     top:0;
     left:0;
@@ -306,4 +315,125 @@ body{
     color: #606060;
 }
 
+}
 
+
+
+
+/* ==========================================
+   TABLET (768px to 1023px)
+   ========================================== */
+/*@media (min-width: 768px) and (max-width: 1023px) {
+ .logo i{
+    margin-left: 10px;
+}
+
+.search{
+    width: 200px;
+}
+
+
+.videos{
+    width: 100%;
+}
+
+.video-grid{
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+.video{
+    width: calc(40% - 2px);
+
+} */
+
+/* .navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+
+.categories{
+    display: none;
+} */
+
+/*  .preview-video { 
+    display: none; 
+
+}*/
+
+
+/* ==========================================
+   MOBILE (Default: 0px - 767px)
+   ========================================== */
+@media (max-width: 767px){
+.navbar{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.logo i,
+.searchbar input,
+.mic,
+.navigation-icons{
+    display: none;
+}
+
+.searchbar{
+    margin-left: auto;
+}
+
+.search button{
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar button i{
+    font-size: 28px;
+}
+
+
+.categories{
+    display: none;
+}
+
+.videos{
+    flex:1;
+    /* overflow-y:auto; */
+    width: 100%;
+}
+
+.video-grid{
+    display:grid;
+
+    /* minmax(0, 1fr) safely allows columns to narrow without overflowing */
+    grid-template-columns:minmax(0, 1fr); 
+    
+    width: 100%;
+    padding: 16px;
+    
+}
+
+.video .thumbnail img{
+    width:100%;
+    aspect-ratio:16 / 9;
+    object-fit:cover;
+    display:block;
+} 
+
+ .preview-video {
+    display: none;
+}
+
+}
