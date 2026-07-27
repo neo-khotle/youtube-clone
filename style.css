@@ -11,9 +11,9 @@ body{
 }
 
 /* ==========================================
-   PC / DESKTOP (1024px and up)
+   DEFAULT LAYOUT (1024px and up)
    ========================================== */
-@media (min-width: 1024px){
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -113,6 +113,11 @@ body{
     margin: 1px;
 }
 
+/* ==========================================
+   PC / DESKTOP (1024px and up)
+   ========================================== */
+
+@media(min-width: 1024px){
 .mainbody{
     height: calc(100vh - 56px);
     display: flex;
@@ -282,6 +287,10 @@ body{
     opacity:0;
 }
 
+}
+/*END OF PC/DESKTOP MEDIA QUERY*/
+
+
 .video .video-details{
     display: flex;
     margin-top: 5px;
@@ -309,24 +318,30 @@ body{
     color: #606060;
 }
 
-}
-
-
-
 
 /* ==========================================
    TABLET (768px to 1023px)
    ========================================== */
 @media (min-width: 768px) and (max-width: 1023px) { 
-.navbar{
+/* .navbar{
     height: 48px;
     display: flex;
     align-items: center;
-     justify-content: space-between;
+    justify-content: space-between;
     padding: 0 10px;
     margin-top: 10px;
+} */
+
+.search{
+    width: 250px;
 }
 
+.search button{
+    width: 30%;
+}
+
+
+/*end of trial*/
 .logo img{
     width: 100px;
 }
