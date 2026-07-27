@@ -54,20 +54,45 @@ body{
     height: 100%;
     margin-right: 20px;
     border-radius: 20px;
+    overflow:hidden;
 }
 
-.search button{
+.search input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    font-size: 16px;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* .search button{
     border: none;
     border-left: 1px solid rgb(211,211,211);
     width: 10%;
     align-items: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+} */
+
+.search button{
+    width: 64px;
+    border: none;
+    border-left: 1px solid rgb(211,211,211);
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .search button i{
     margin: 0;
-    padding: 2px;
+    /* padding: 2px; */
 }
 
 .mic{
@@ -195,13 +220,7 @@ body{
 
 .videos{
     width: calc(100% - 240px);
-    height: 100%;  
-
-    /* testing overflow rules
-    flex:1;
-    height:100%;
-    overflow-y:auto; */
-    
+    height: 100%;    
     background-color: white;
     border-top: 1px solid #cccccc;
     overflow-y: scroll; 
@@ -217,7 +236,7 @@ body{
 .video{
     border-radius: 10px;
     width: calc(33% - 2px);
-    margin-right: 6px;
+    margin-right: 7px;
     cursor: pointer;
     margin-bottom: 35px; 
 }
@@ -227,9 +246,7 @@ body{
     border-radius: 10px;
 }
 
-.video .thumbnail{
-    position: relative;
-}
+
 
 
 .thumbnail{
@@ -261,6 +278,10 @@ body{
 
 }
 /*END OF PC/DESKTOP MEDIA QUERY*/
+
+.video .thumbnail{
+    position: relative;
+}
 
 /*video-duration badge*/
 .video .duration-badge{
@@ -324,15 +345,13 @@ body{
 } */
 
 .search{
-    width: 250px;
+    width: 280px;
 }
 
 .search button{
     width: 30%;
 }
 
-
-/*end of trial*/
 .logo img{
     width: 100px;
 }
@@ -378,7 +397,7 @@ body{
 .video .duration-badge{
     position: relative;
     bottom: 30px;  
-    left: 330px;
+    left: 300px;
 }
 }
 /*
@@ -463,8 +482,7 @@ body{
 }
 
 .searchbar button i{
-    font-size: 28px;
-    margin-left: 80px;
+    margin: 10px;
 }
 
 
@@ -488,7 +506,7 @@ body{
 }
 
 .video{
-    margin-bottom: 32px;
+    margin-bottom: 15px;
 }
 
 .video .thumbnail img{
