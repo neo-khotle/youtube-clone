@@ -56,15 +56,6 @@ body{
     border-radius: 20px;
 }
 
-.search input{
-    border: none;
-    width: 90%;
-    padding-left: 10px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
 .search button{
     border: none;
     border-left: 1px solid rgb(211,211,211);
@@ -240,25 +231,6 @@ body{
     position: relative;
 }
 
-/*video-duration badge*/
-.video .duration-badge{
-    position: absolute; 
-    bottom: 8px; /* Offset from the bottom edge */
-    right: 8px;  /* Offset from the right edge */
-    /* Exact styling matching YouTube UI */
-    background-color: rgba(0, 0, 0, 0.5); /* Dark translucent background */
-    color: #ffffff; /* Bright white text */
-    font-size: 12px;
-    font-weight: 500; 
-    padding: 3px 4px; /* Tight padding padding around numbers */
-    border-radius: 4px; /* Slight rounded look */
-    line-height: 12px;
-    letter-spacing: 0.5px;
-}
-
-.duration-badge img{
-    color: #ffffff;
-}
 
 .thumbnail{
     transition:opacity .3s;
@@ -290,6 +262,25 @@ body{
 }
 /*END OF PC/DESKTOP MEDIA QUERY*/
 
+/*video-duration badge*/
+.video .duration-badge{
+    position: absolute; 
+    bottom: 8px; /* Offset from the bottom edge */
+    right: 8px;  /* Offset from the right edge */
+    /* Exact styling matching YouTube UI */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark translucent background */
+    color: #ffffff; /* Bright white text */
+    font-size: 12px;
+    font-weight: 500; 
+    padding: 3px 4px; /* Tight padding padding around numbers */
+    border-radius: 4px; /* Slight rounded look */
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
+
+.duration-badge img{
+    color: #ffffff;
+}
 
 .video .video-details{
     display: flex;
@@ -384,6 +375,11 @@ body{
 
 }
 
+.video .duration-badge{
+    position: relative;
+    bottom: 30px;  
+    left: 330px;
+}
 }
 /*
  .logo i{
@@ -448,6 +444,12 @@ body{
     display: none;
 }
 
+.search{
+    width: 40px;
+    border: none;
+}
+
+
 .searchbar{
     margin-left: auto;
 }
@@ -462,6 +464,7 @@ body{
 
 .searchbar button i{
     font-size: 28px;
+    margin-left: 80px;
 }
 
 
