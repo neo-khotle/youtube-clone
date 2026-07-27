@@ -282,12 +282,6 @@ body{
     opacity:0;
 }
 
-/* .video .details{
-    display: flex;
-    margin-top: 5px;
-    width: 90px;
-} */
-
 .video .video-details{
     display: flex;
     margin-top: 5px;
@@ -323,7 +317,60 @@ body{
 /* ==========================================
    TABLET (768px to 1023px)
    ========================================== */
-/*@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) { 
+.navbar{
+    height: 48px;
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.categories{
+    display: none;
+}
+
+.videos{
+    flex:1;
+    width: 100%;
+    
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr); 
+    
+    /* minmax(0, 1fr) safely allows columns to narrow without overflowing */
+        
+    width: 100%;
+    padding: 10px;  
+     
+}
+
+.video{
+
+    margin: 0 10px 32px 10px;
+}
+
+.video .thumbnail img{
+    width:100%;
+    aspect-ratio:16 / 9;
+    object-fit:cover;
+    display:block;
+    border-radius: 10px;
+}
+.preview-video { 
+    display: none; 
+
+}
+
+}
+/*
  .logo i{
     margin-left: 10px;
 }
@@ -355,12 +402,10 @@ body{
     align-items: center;
 }
 
-.categories{
-    display: none;
+
 } */
 
-/*  .preview-video { 
-    display: none; 
+/*  
 
 }*/
 
@@ -374,6 +419,7 @@ body{
     display: flex;
     align-items: center;
     padding: 0 12px;
+    margin-top: 10px;
 }
 
 .logo img{
