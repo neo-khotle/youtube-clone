@@ -11,7 +11,9 @@
     <!-- Nav bar Section-->
     <div class="navbar"> 
         <div class="logo">
-            <i class="material-icons">menu</i> <!--menu icon-->
+            <button type="button" class="menu-btn" aria-label="Toggle sidebar" aria-expanded="true">
+                <i class="material-icons">menu</i>
+            </button>
             <img src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg" alt="Youtube Logo"> 
         </div>
 
@@ -710,8 +712,16 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="scroll-sentinel" aria-hidden="true"></div>
+
+                <div class="loading-indicator" hidden>
+                    <span class="loading-spinner"></span>
+                    Loading...
+                </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
