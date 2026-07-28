@@ -33,7 +33,7 @@ body{
 }
 
 .navbar i{
-    margin-right: 24px;;
+    margin-right: 4px;;
 }
 
 .logo img{
@@ -68,14 +68,6 @@ body{
     border-bottom-left-radius: 20px;
 }
 
-/* .search button{
-    border: none;
-    border-left: 1px solid rgb(211,211,211);
-    width: 10%;
-    align-items: center;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-} */
 
 .search button{
     width: 64px;
@@ -104,6 +96,20 @@ body{
 .material-icons{
     color: rgb(0, 0, 0);
     margin-right: 10px;
+}
+
+.profile-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.category.sub img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
 }
 
 .navigation-icons {
@@ -141,7 +147,7 @@ body{
 }
 
 .categories{
-    width: 240px;
+    width: 235px;
     height: 100%;
     background-color: white;
     overflow-y: scroll; /*y-axis scroll feature*/
@@ -229,14 +235,13 @@ body{
 .video-grid{
     display: flex; 
     flex-wrap: wrap;
-    padding: 15px;
-    
+    padding: 15px 7px 15px 7px;
 }
 
 .video{
     border-radius: 10px;
-    width: calc(33% - 2px);
-    margin-right: 7px;
+    width: calc(32% - 2px);
+    margin: 0 7px 35px 7px;
     cursor: pointer;
     margin-bottom: 35px; 
 }
@@ -373,8 +378,8 @@ body{
 
 .video .profile img{
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 .video .video-title p{
     font-size: 14px;
@@ -430,14 +435,6 @@ body{
    TABLET (768px to 1023px)
    ========================================== */
 @media (min-width: 768px) and (max-width: 1023px) { 
-/* .navbar{
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    margin-top: 10px;
-} */
 
 .search{
     width: 280px;
@@ -445,6 +442,10 @@ body{
 
 .search button{
     width: 30%;
+}
+
+.logo i{
+    background-color: none;
 }
 
 .logo img{
